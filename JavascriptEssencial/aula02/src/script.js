@@ -1,3 +1,5 @@
+//funções
+
 /**
  * Uma função nada mais é que um bloco de código que executa uma determinada tarefa
  * Uma função somente é executada mediante uma chamada específica a ela 

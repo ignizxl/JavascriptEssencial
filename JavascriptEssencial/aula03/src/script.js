@@ -29,12 +29,17 @@ var pessoa = {
     }
 }   
 
+console.log(pessoa.andar()); // chamando a função andar  
 
 //o array é recomendado para armazenar dados de um mesmo contexo, como por exemplo: frutas, tipos de carros ...
+
+//indíces        0       1         2         3
 var frutas = ['maça', 'melão', 'laranja', 'banana'];
 
+//para acessar algum item acima nós utilizamos o nome da variável seguida de conchetes, indicando a posição ['indíce'] 
+//exemplo: frutas[0] = maça | frutas[1] = melão ...
 
-console.log(pessoa.andar())
+console.log(frutas[3]); //imprimindo o item 'banana'
 
 /**
  * pop = remove o último elemento 
@@ -57,4 +62,4 @@ console.log('Frutas .toString = ' + frutas.toString());
 console.log(frutas.join(' - '));
 console.log('Removendo a primeiro elemento do array de frutas com o comando "shift": ' + frutas.shift());
 console.log('Adicionando a fruta "melancia" no array de frutas utilizando o comando "push": ' + frutas.push('Melancia'));
-console.log(frutas)
+console.log(frutas);
