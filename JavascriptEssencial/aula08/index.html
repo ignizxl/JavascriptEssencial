@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula 08</title>
+</head>
+<!--onload > depois que a página for completamente carregada, eu vou chamar a função mensagem()-->
+<body onload="mensagem()">
+
+    <!--veja que ao abrir este documento no chrome o valor do scr vai ser alterado, pra vizualizar melhor, aperte 12 depois que abrir o documento no navedor e 
+    procure por 'elements', fica próximo do 'console' -->
+    <img id="imagem" src="imagem.jpg" alt="Está imagem não existe! É apenas um exemplo"/>
+
+
+    <!--tags de título-->
+    <h1 id="titulo"></h1>
+    <h2 id="tituloNivel2">Abra o Console!</h2>
+
+    <!--tags de parágrafo-->
+    <p id="demo"></p>
+    
+    <p class="exemplos"></p>
+    <p class="exemplos"></p>
+    <p class="exemplos"></p>
+
+    <p class="paragrafo"></p>
+    <p class="paragrafo"></p>
+    
+    <!--this faz referência a própria tag 'h3'. então, ao clicar neste elemento, eu vou escrever neste mesmo elemento
+    utilizando o innerHTML a mensagem hello world -->
+    <h3 onclick="this.innerHTML = 'Hello World!'">Clique aqui para acontecer um evento!</h3>
+    <!--outro exemplo, mas dessa vez com uma função-->
+    <!--chamo a função evento e passo a própria tag h3 como parâmetro da função-->
+    <h3 onclick="evento(this)">Clique aqui para acontecer um segundo evento!</h3>
+
+    <h3 id="onclickporfora">clique aqui para acontecer mais um evento!</h3>
+
+    <!--onchange = evento de alteração -->
+    <select name="opcoes" id="opcoes" onchange="mensagemDeSelect()">
+        <option value="opcao1">Opção 1</option>
+        <option value="opcao2">Opção 2</option>
+        <option value="opcao3">Opção 3</option>
+    </select>
+
+    <!--onmouseover > quando o mouse estiver em cima do elemento, vai chamar a função 'funcao01' 
+        onmouseout > quando o mouse sair de cima do elemento vai chamar a função 'funcao02'
+    -->
+    <h3 id="mouse" onmouseover="funcao01(this)" onmouseout="funcao02(this)">passe o mouse aqui! </h3>
+
+    <script src="./src/script.js"></script>
+</body>
+</html>
