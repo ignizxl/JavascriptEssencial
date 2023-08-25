@@ -3,18 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>aula 09</title>
+    <title>aula 09 - FINAL</title>
 </head>
 <body>
     <h1>Abra o console!</h1>
 
+    <h2>Permaneça na página por 10 segundos para receber uma mensagem!</h2>
+    <h2 id="obrigado"></h2>
+
+
+
     <div id="msg00"></div>
     <div id="msg01"></div>
+
+    <!--ao clicar neste botão, irá interromper o meu setTimeOut, a minha função não será executada-->
+    <button type="button" onclick="clearTimeout(limpando)">clearTimeout</button>
+
+    <!--ao clicar neste botão, irá interromper o meu setInterval, a minha função não será executada
+    clearInterval(msg) >> msg é a variável que eu armazenei o setInterval-->
+    <button type="button" onclick="clearInterval(msg)">clearInterval</button>
 
     <!--
     <input type="button" value="Voltar" onclick="window.history.back();" />
     <input type="button" value="Avançar" onclick="window.history.forward();" />
     -->
+
     
     <script src="./src/script01.js"></script>
 </body>
